@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<simlproject>
+  <name>SIML_Chatbot_Demo</name>
+  <directory>Andrey</directory>
+  <botname>Andrey</botname>
+  <personality>male</personality>
+  <author>Popov Andrey</author>
+  <description>Чат бот для дипломного проэкта</description>
+  <date>20:47:56, 2 мая 2016 г.</date>
+  <notes></notes>
+</simlproject>

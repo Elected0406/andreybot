@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <Concept Type="public" Name="Курс валют">
+     <Model>
+  <Pattern>КУРС ВАЛЮТ</Pattern>
+  <Pattern>КУРС ВАЛЮТЫ</Pattern>
+  <Pattern>ВАЛЮТНЫЙ КУРС</Pattern>
+  <Response>
+    <Js>cursvalut();</Js>
+  </Response>
+</Model>
+  </Concept>
+</Siml>

@@ -1,0 +1,11 @@
+﻿@using andreybot.Models
+@model IEnumerable<User>
+
+    @foreach (User user in Model)
+    {
+    <tr>
+        <td>@user.FirstName</td>
+        <td>@user.LastName</td>
+        <td>@user.Role</td>
+    </tr>
+    }

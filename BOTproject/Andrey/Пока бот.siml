@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <Concept Type="public" Name="Пока бот">
+    <Model>
+      <Pattern>
+        <Item>ПРОЩАЙ</Item>
+        <Item>ДО ЗАВТРА</Item>
+        <Item>ПОКА</Item>
+        <Item>ДОСВИДАНИЯ</Item>
+      </Pattern>
+      <Response>Пока, ты заходи если че))</Response>
+    </Model>
+  </Concept>
+</Siml>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <Concept Type="public" Name="Привет Bot">
+    <Model>
+      <Pattern>
+        <Item>ПРИВЕТ</Item>
+        <Item>ЗДАРОВА</Item>
+        <Item>ДОБРЫЙ ДЕНЬ</Item>
+        <Item>ДОБРОЕ ВРЕМЯ СУТОК</Item>
+      </Pattern>
+      <Response>Привет</Response>
+    </Model>
+    
+    <Model>
+      <Pattern>
+        <Item>КАК ЖИЗНЬ *</Item>
+        <Item>КАК ЖИТУХА</Item>
+        <Item>КАК УСПЕХИ</Item>
+        <Item>КАК ДЕЛА</Item>
+        <Item>КАК УЧОБА</Item>
+      </Pattern>
+      <Response>нормально</Response>
+    </Model>
+       <Model>
+      <Pattern>
+        <Item>КАК ЖИЗНЬ *</Item>
+        <Item>КАК ЖИТУХА</Item>
+        <Item>КАК УСПЕХИ</Item>
+        <Item>КАК ДЕЛА</Item>
+        <Item>КАК УЧОБА</Item>
+      </Pattern>
+      <Response>нормально</Response>
+    </Model>
+    
+    <Model>
+      <Pattern>
+        <Item>ТЫ ЛЮБИШЬ (БЕКОН|БЛИНЫ)</Item>
+      </Pattern>
+      <Response>Да, я люблю <Match /></Response>
+    </Model>
+    
+    <Model>
+      <Pattern>
+        <Item>ТЫ *</Item>
+      </Pattern>
+      <Response>Сам ты <Match /></Response>
+    </Model>
+    
+    <Model>
+      <Pattern>
+        <Item>КАК ТЕБЯ ЗОВУТ</Item>
+      </Pattern>
+      <Response>Меня зовут <Bot Get="Name" /></Response>
+    </Model>
+    
+    <Model>
+      <Pattern>ИЗМЕНИТЬ ИМЯ НА *</Pattern>
+      <Response> Хорошо мое имя теперь <Bot Set="Name"><Match /></Bot></Response>
+    </Model>
+    
+    <Model>
+      <Pattern>
+        <Item>МОЙ ЛЮБИМЫЙ ЦВЕТ [COLOR]</Item>
+      </Pattern>
+      <Response>Да, мне тоже нравится <Match /></Response>
+    </Model>
+    
+    <Model>
+      <Pattern>МНЕ @NUMBER ЛЕТ</Pattern>
+      <Response>
+        <Match /> лет это неплохо)).</Response>
+    </Model>
+    
+  </Concept>
+</Siml>

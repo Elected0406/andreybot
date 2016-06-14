@@ -1,0 +1,36 @@
+﻿@using andreybot.Models
+@model string
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Данные пользователей";
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        UpdateTargetId = "tableBody", InsertionMode=InsertionMode.InsertAfter, 
+        LoadingElementId="loading", LoadingElementDuration=1000
+    };
+}
+@if (Request.IsAuthenticated)
+{
+<h2>Данные пользователей</h2>
+<table>
+    <thead>
+        <tr><th>Имя</th><th>Фамилия</th><th>Роль</th></tr>
+    </thead>
+    <tbody id="tableBody">
+        @Html.Action("GetPeopleData", new { selectedRole = Model})
+        <div id="loading" style="display:none; color:Red; font-weight:bold;">
+            <p>Идет загрузка...</p>
+        </div>
+    </tbody>
+</table>
+}
+@using (Ajax.BeginForm("GetPeopleData", ajaxOptions))
+{
+    <div>
+        @if (Request.IsAuthenticated)
+        {
+        @Html.DropDownList("selectedRole", new SelectList(new[] { "All" }.Concat(Enum.GetNames(typeof(Role)))))
+        <button type="submit">Отобразить</button>
+        }
+    </div>
+}
